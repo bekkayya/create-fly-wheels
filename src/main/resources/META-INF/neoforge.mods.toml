@@ -1,0 +1,37 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+logoFile="create_fly_wheels_logo.png"
+
+[[mods]]
+modId="create_fly_wheels"
+version="0.1"
+displayName="Create: Fly Wheels"
+description='tac some functionality back onto flywheels'
+authors="Mae"
+
+[[mixins]]
+config = "create_fly_wheels.mixins.json"
+
+# Dependencies
+[[dependencies.create_fly_wheels]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.create_fly_wheels]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.create_fly_wheels]]
+modId = "create"
+type = "required"
+versionRange = "[6.0.0,)"
+ordering = "NONE"
+side = "BOTH"
